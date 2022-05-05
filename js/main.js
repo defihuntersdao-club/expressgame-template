@@ -1,20 +1,28 @@
 'use strict';
 
-const scrollContent = document.querySelector('.custom-scroll');
+const scrollContent = document.querySelectorAll('.custom-scroll');
 
-if ( scrollContent ) {
-    new PerfectScrollbar(scrollContent);
+var scrollContentItem = Array.prototype.slice.call(scrollContent);
+
+if ( scrollContentItem ) {
+    scrollContentItem.forEach(function(element, key){
+        new PerfectScrollbar(element, {
+            suppressScrollX: true,
+        });
+    });
 }
 
-let selectContent = document.querySelector('.select');
+const scrollContentWidth = document.querySelectorAll('.custom-scroll-width');
 
-selectContent.addEventListener('click', function(){
-    let scrollContentModal = document.querySelector('.custom-scroll-select');
-    new PerfectScrollbar(scrollContentModal, {
-        wheelSpeed: 0.2,
-        wheelPropagation: false
-    }); 
-});
+var scrollContentWidthItem = Array.prototype.slice.call(scrollContentWidth);
+
+if ( scrollContentWidthItem ) {
+    scrollContentWidthItem.forEach(function(element, key){
+        new PerfectScrollbar(element, {
+            suppressScrollY: true,
+        });
+    });
+}
 
 let previewModeForm = document.getElementById('preview-mode-form');
 if ( previewModeForm ) {
@@ -44,31 +52,84 @@ if ( previewModeForm ) {
     });
 }
 
-const select = new CustomSelect('.select', {
-    name: 'gameLevel',
-    options: [
-        ['level2', 'Level 2 (0.07 BNB)'],
-        ['level3', 'Level 3 (0.1 BNB)'],
-        ['level4', 'Level 4 (0.14 BNB)'],
-        ['level5', 'Level 5 (0.2 BNB)'],
-        ['level6', 'Level 6 (0.28 BNB)'],
-        ['level7', 'Level 7 (0.4 BNB)'],
-        ['level8', 'Level 8 (0.55 BNB)'],
-        ['level9', 'Level 9 (0.8 BNB)'],
-        ['level10', 'Level 10 (1.1 BNB)'],
-        ['level11', 'Level 11 (1.6 BNB)'],
-        ['level12', 'Level 12 (2.2 BNB)'],
-        ['level13', 'Level 13 (3.2 BNB)'],
-        ['level14', 'Level 14 (4.4 BNB)'],
-        ['level15', 'Level 15 (6.5 BNB)'],
-        ['level16', 'Level 16 (8 BNB)'],
-    ],
-  }); 
+customSelect('select', {
+    panelClass: 'custom-select-panel custom-scroll',
+});
+
+let videoPlug = document.getElementsByClassName('video-plug')[0];
+let videoBlock = document.getElementsByClassName('video-block')[0];
+let videoEl = document.getElementsByTagName('video')[0];
+
+if ( videoBlock ) {
+    videoBlock.addEventListener('click', function() {
+        videoPlug.style.opacity = 0;
+        if (videoEl.paused) {
+            videoEl.play();
+        } else {
+            videoEl.pause();
+        }
+    });
+}
 
 
+let dropDownItemNode = document.querySelectorAll('.dropdownParent');
+// var dropDownItem = Array.from(dropDownItemNode);
 
+// console.log(dropDownItem);
 
+function showDropdow(el) {
+    el.classList.add('dropdown-show');
+    el.querySelector('.dropdownBlock').style.maxHeight = el.querySelector('.dropdownBlock').scrollHeight + "px";
+    el.querySelector('.dropdownBlock').style.opacity = 1;
+    if ( el.querySelector('.dropdownItem img') ) {
+        el.querySelector('.dropdownItem img').style.transform = 'rotate(180deg)';
+        el.querySelector('.dropdownItem img').style.transition = '.2s ease-in';
+    }
+    
+}
 
+function hideDropdow(el) {
+    el.classList.remove('dropdown-show');
+    el.querySelector('.dropdownBlock').style.maxHeight = "0px";
+    el.querySelector('.dropdownBlock').style.opacity = 0;
+    if ( el.querySelector('.dropdownItem img') ) {
+        el.querySelector('.dropdownItem img').style.transform = 'rotate(0)';
+    }
+}
 
+dropDownItemNode.forEach(function(element, key){
+    const elementBtn = element.querySelector('.dropdownItem');
+    const dropdownBlock = element.querySelector('.dropdownBlock');
+    if ( window.screen.width < 992 ) {
+        hideDropdow(element);
+    }
+    elementBtn.addEventListener('click', function(){
+        if ( element.classList.contains('dropdown-show') ) {
+            hideDropdow(element);
+        } else {
+            showDropdow(element);
+        }
+    });
 
+    dropdownBlock.addEventListener('click', function(e){
+        if ( window.screen.width < 992 ) {
+            if ( e.target.closest('.aside-item') ||  e.target.classList.contains('.aside-item') ) {
+                hideDropdow(e.target.closest('.dropdownParent'));
+            }
+        }
+    });
 
+});
+
+window.addEventListener('resize', function(){
+    if ( window.screen.width >= 992 ) {
+        dropDownItemNode.forEach(function(element, key){
+            showDropdow(element);
+            element.querySelector('.dropdownBlock').style.maxHeight = 'initial';
+        });
+    } else {
+        dropDownItemNode.forEach(function(element, key){
+            hideDropdow(element);
+        });
+    }
+});
