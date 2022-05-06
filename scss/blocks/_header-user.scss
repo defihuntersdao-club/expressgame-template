@@ -1,0 +1,79 @@
+.header-user {
+    display: flex;
+}
+.header-user-btn {
+    color: rgba(255, 255, 255, 0.6);
+    background: #02053F;
+    border-radius: 10px;
+    padding: 9px 14px;
+    display: flex;
+    align-items: center;
+    span {
+        padding-left: 10px;
+        white-space: nowrap;
+        line-height: 1;
+    }
+    img {
+        min-width: 22px;
+    }
+}
+.header-user-btn + .header-user-btn {
+    margin-left: 20px;
+}
+.header-user-btn-item {
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.6);
+}
+.header-user-btn-item:first-child {
+    padding-right: 15px;
+}
+.header-user-btn-item:last-child {
+    border-left: 1px solid rgba(255, 255, 255, 0.15);
+    padding-left: 15px;
+}
+@media screen and (max-width: 767px) {
+    .header-user-btn-single {
+        padding: 10px;
+        span {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .header-user-btn {
+        span {
+            font-size: 12px;
+        }
+    }
+}
+@media screen and (max-width: 420px) {
+    .header-user-btn-wallet {
+        img {
+            display: none;
+        }
+        span {
+            padding-left: 0;
+        }
+    }
+    .header-user-btn + .header-user-btn {
+        margin-left: 5px;
+    }
+    .header-user-btn {
+        padding: 10px;
+    }
+    .header-user {
+        .header-logo-name {
+            padding-right: 5px;
+        }
+    }
+}
+@media screen and (max-width: 390px) {
+    .header-user {
+        .header-logo-name {
+            font-size: 11px;
+            line-height: 1.5;
+        }
+    }
+}

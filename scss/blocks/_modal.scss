@@ -1,0 +1,282 @@
+.modal {
+    background: #02042C;
+}
+.modal-body {
+    padding: 0;
+    form {
+        p {
+            color: #fff;
+            margin-bottom: 0;
+        }
+        span {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 14px;
+            display: inline-block;
+            padding-bottom: 10px;
+            word-break: break-all;
+        }
+        .custom-select-container {
+            span {
+                font-size: 16px;
+                color: #fff;
+            }
+          }
+    }
+    .custom-select-container {
+        margin-bottom: 24px;
+        margin-top: 10px;
+    }
+    .custom-select-opener {
+        background: #0E4C95;
+    }
+    .custom-select-panel {
+        background: #0E4C95;
+    }
+}
+.modal-content {
+    background: #171A5E;
+    border-radius: 10px;
+    padding: 48px 44px;
+    border: none;
+    p {
+        color: rgba(255, 255, 255, 0.6);
+        margin-bottom: 10px;
+    }
+    h2 {
+        font-size: 28px;
+        font-weight: 700;
+        margin-bottom: 14px;
+    }
+}
+
+.btn-modal {
+    width: 100%;
+    margin-top: 35px;
+}
+
+.modal-close {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    cursor: pointer;
+}
+
+.modal-backdrop.show {
+    opacity: 1;
+}
+
+.modal-header {
+    border: none;
+    padding: 0;
+    margin-bottom: 24px;
+    h2 {
+        margin-bottom: 0;
+    }
+}
+
+.modal-header-col {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.modal-body-bg {
+    padding: 0;
+    background: #02053F;
+    border-radius: 10px;
+    padding: 32px 30px;
+}
+
+.wallet-number-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.wallet-number {
+    span {
+        padding-left: 14px;
+        font-style: 22px;
+        font-weight: 700;
+    }
+}
+
+.smart-chain {
+    margin-bottom: 31px;
+    span {
+        padding-left: 12px;
+    }
+}
+
+.ballance {
+    span {
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.5);
+    }
+}
+
+.ballance-block {
+    margin-top: 12px;
+    span {
+        font-size: 16px;
+        color: #fff;
+        padding-left: 10px;
+    }
+}
+
+.modal-content.modal-content-choose-coins {
+    padding: 0;
+}
+.choose-coin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 44px;
+    padding-top: 40px;
+    transition: .2s ease-in;
+    &:hover {
+        background-color: rgba(2, 4, 44, .5);
+    } 
+}
+.choose-coin + .choose-coin {
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+.choose-coin-img {
+    margin-bottom: 22px;
+}
+.choose-coin-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 11px;
+    color: #fff;
+}
+.choose-coin-text {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.modal-btn-block {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 42px;
+    .btn + .btn {
+        margin-top: 8px;
+    }
+}
+
+.btn-long {
+    width: 100%;
+}
+
+.btn-dark {
+    background: #0E4C95;
+}
+
+.modal-input-group {
+    display: flex;
+    margin-bottom: 25px;
+    input {
+        border: 2px solid #0E4C95;
+        border-radius: 10px;
+        margin-right: 10px;
+        background: transparent;
+        padding: 15px 20px;
+        color: #fff;
+        height: 50px;
+        &:focus {
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+    }
+    .btn {
+        padding-left: 20px;
+        padding-right: 20px;
+        white-space: nowrap;
+    }
+}
+.modal-close {
+    width: 24px;
+    height: 24px;
+    img {
+        width: 100%;
+    }
+}
+.modal-body {
+    .express-card {
+        width: 100%;
+        height: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        background: #02053F;
+        .btn {
+            justify-content: center;
+        }
+        .express-card-bonus {
+            p {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+.modal-express-card-scroll {
+    height: 244px;
+}
+.modal-express-card-info {
+    padding-right: 15px;
+}
+.modal-express-card-info-item {
+    p {
+        margin-right: 5px;
+        margin-top: 5px;
+        font-size: 16px;
+        color: #fff;
+    }
+    span {
+        font-size: 16px;
+        color: rgba(255, 255, 255, 0.6);
+    }
+    img {
+        width: 14px;
+        height: 14px;
+        margin-right: 5px;
+    }
+}
+.modal-body-legend {
+    .btn {
+        display: flex;
+        justify-content: center;
+        margin-top: 5px;
+        height: 50px;
+    }
+}
+@media screen and (max-width: 991px) {
+    .modal-close {
+        top: 10px;
+        right: 10px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .modal-content {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .modal-content h2 {
+        font-size: 22px;
+    }
+    .choose-coin-title {
+        font-size: 18px;
+    }
+    .choose-coin-text {
+        font-size: 14px;
+    }
+    .modal-input-group input {
+        height: 40px;
+        width: 100%;
+    }
+    .modal-close {
+        width: 18px;
+        height: 18px;
+        img {
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,46 @@
+.telegrambot {
+    background: #02053F;
+    border-radius: 10px;
+    padding: 33px 27px 41px 27px;
+    max-width: 460px;
+    margin-bottom: 30px;
+}
+.telegrambot-item + .telegrambot-item {
+    margin-top: 18px;
+}
+.telegrambot-item {
+    background: #25285E;
+    border-radius: 15px;
+    padding: 18px 18px 22px 18px;
+    display: flex;
+    align-items: center;
+    transition: .2s ease-in;
+    &:hover {
+        background: #40426C;
+    }
+}
+.telegrambot-title {
+    font-size: 14px;
+    color: #fff;
+}
+.telegrambot-subtitle {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+}
+.telegrambot-icon {
+    width: 35px;
+    min-width: 35px;
+    height: 35px;
+    background: #02053F;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+@media screen and (max-width: 767px) {
+    .telegrambot {
+        padding-left: 17px;
+        padding-right: 17px;
+    }
+}

@@ -1,0 +1,24 @@
+.footer {
+    margin-bottom: 15px;
+    margin-top: auto;
+}
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.copyright {
+    margin-right: 15px;
+     color: rgba(255, 255, 255, 0.5);
+}
+@media screen and (max-width: 470px) {
+    .footer-wrapper {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .copyright {
+        font-size: 12px;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}

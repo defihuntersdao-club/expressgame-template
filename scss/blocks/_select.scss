@@ -1,0 +1,86 @@
+.custom-select-container {
+  position: relative;
+  box-sizing: border-box;;
+}
+.custom-select-container * {
+  box-sizing: border-box;
+}
+.custom-select-container.is-disabled {
+  opacity: .333;
+}
+.custom-select-opener {
+  position: relative;
+  background-color: #25285E;
+  padding: 15px 20px 18px 15px;
+  display: block;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 15px;
+  transition: border-radius .8s ease-out;
+  &::before {
+    position: absolute;
+    content: url("data:image/svg+xml;charset=UTF-8,%3csvg width='11' height='7' viewBox='0 0 11 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M5.70277 6.57602L10.6673 0.843836H0.738281L5.70277 6.57602Z' fill='white'/%3e%3c/svg%3e");
+    right: 20px;
+  }
+}
+.custom-select-container select {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.custom-select-panel {
+  max-height: 0;
+  opacity: 0;
+  transition: max-height .5s ease-out, overflow-y 0.1s 0.5s;
+  overflow: hidden;
+  background-color: #25285E;
+  position: absolute;
+  top: 44px;
+  z-index: 5;
+  width: 100%;
+  padding-top: 10px;
+  pointer-events: none;
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #0348A1;
+    border-radius: 20px;
+    border: 3px solid transparent;
+  }
+}
+
+.custom-select-container.is-open .custom-select-panel {
+  max-height: 285px;
+  overflow-y: auto;
+  opacity: 1;
+  pointer-events: all;
+  -webkit-overflow-scrolling: touch;
+}
+.custom-select-option {
+  padding: 15px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  cursor: pointer;
+}
+.custom-select-option.has-focus {
+  background-color: rgba(0, 150, 234, 0.15);
+}
+.custom-select-option.is-selected::before {
+  content: "✔";
+  padding-right: 0.5em;
+  right: 0;
+  position: absolute;
+}
+.custom-select-optgroup > .custom-select-option {
+  padding-left: 2em;
+}
+.custom-select-optgroup::before {
+  content: attr(data-label);
+  display: block;
+  padding: 0.5em;
+  color: #888;
+}

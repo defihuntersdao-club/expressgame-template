@@ -1,0 +1,11 @@
+extends ../layouts/layout.pug
+
+block content
+    .account-wrapper
+        .container.decor
+            include ../sections/_header-account.pug
+            .account-content
+                include ../sections/_aside.pug
+                include ../sections/_tabs-page.pug
+block variables
+    -var title = "Account page";

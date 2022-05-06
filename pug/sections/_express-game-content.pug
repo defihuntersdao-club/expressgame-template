@@ -1,0 +1,147 @@
+mixin expressCard(lvl, coin, text, bonus, profit)
+    .express-card
+        .express-card-title-block
+            .express-card-lvl #{lvl}
+            .express-card-coins 
+                .coin-icons
+                    img(src="./img/coin.png", alt="coin")
+                span #{coin}
+        .exprees-card-text #{text}
+        .express-card-bonus-wrapper
+            .express-card-bonus
+                p #{bonus} BNB
+                span Partner bonus
+            .express-card-bonus
+                p #{profit} BNB
+                span Level profits
+        a(href="#!").btn.btn-purple Login to activate
+mixin expressCardAvailable(lvl, coin, time)
+    .express-card.expres-card-available
+        .express-card-title-block
+            .express-card-lvl #{lvl}
+            .express-card-coins 
+                .coin-icons
+                    img(src="./img/coin.png", alt="coin")
+                span #{coin}
+        .exprees-card-info
+            img(src="./img/icons/clock-pink.svg", alt="clock")
+            p Available in:
+            span 10 minutes
+mixin expressCardActivate(lvl, coin, text)
+    .express-card
+        .express-card-title-block
+            .express-card-lvl #{lvl}
+            .express-card-coins 
+                .coin-icons
+                    img(src="./img/coin.png", alt="coin")
+                span #{coin}
+        .exprees-card-text #{text}
+        a(href="#!").btn.btn-purple Login to activate
+.express-game-title
+    .current-id ID 1 / 
+        span Express Game
+.title-wrapper
+    h1.title-1 Express Game
+    .express-game-bnb 6 737.72865 BNB
+.express-block.express-max.dropdownParent
+    .arrow-down.dropdownItem
+        img(src="./img/icons/menu-icon.svg", alt="menu-arrow")
+    .express-title Express 
+        p Max
+    .express-game-checklist-row
+        .express-game-checklist-item.express-max-color
+        .express-game-checklist-item.express-max-color
+        .express-game-checklist-item.express-max-color
+        .express-game-checklist-item.express-max-color
+        .express-game-checklist-item.express-max-color
+        .express-game-checklist-item.express-max-process.process
+        .express-game-checklist-item.express-max-process.process
+    .express-card-content.dropdownBlock
+        .express-card-wrapper
+            +expressCardActivate('Lvl 17', '10', 'Activate or login to see the line fill')
+            +expressCardActivate('Lvl 18', '12', 'Activate or login to see the line fill')
+            +expressCardActivate('Lvl 19', '15', 'Activate or login to see the line fill')
+            +expressCardActivate('Lvl 20', '18', 'Activate or login to see the line fill')
+            +expressCardActivate('Lvl 21', '22', 'Activate or login to see the line fill')
+            +expressCardActivate('Lvl 22', '27', 'Activate or login to see the line fill')
+            +expressCardActivate('Lvl 23', '33', 'Activate or login to see the line fill')
+            +expressCardAvailable('Lvl 24', '40', '2 days')
+        .express-footer
+            a(href="#!" data-bs-toggle="modal" data-bs-target="#marketingLegendModal").btn.btn-question.btn-icons-left
+                img(src="./img/icons/question.svg", alt="question")
+                span Marketing legend
+            span All prices in BNB
+.express-block.express-main.dropdownParent
+    .arrow-down.dropdownItem
+        img(src="./img/icons/menu-icon.svg", alt="menu-arrow")
+    .express-title Express 
+        p Main
+    .express-game-checklist-row
+        .express-game-checklist-item.done
+        .express-game-checklist-item.done
+        .express-game-checklist-item.done
+        .express-game-checklist-item.done
+        .express-game-checklist-item.done
+        .express-game-checklist-item.done
+        .express-game-checklist-item.done
+        .express-game-checklist-item.done
+        .express-game-checklist-item.done
+        .express-game-checklist-item.done
+        .express-game-checklist-item.done
+        .express-game-checklist-item.done
+        .express-game-checklist-item.done
+        .express-game-checklist-item.done
+        .express-game-checklist-item.done
+        .express-game-checklist-item.done
+    .express-card-content.dropdownBlock
+        .express-card-wrapper
+            +expressCardActivate('Lvl 16', '10', 'Activate or login to see the line fill')
+            +expressCardActivate('Lvl 15', '12', 'Activate or login to see the line fill')
+            +expressCardActivate('Lvl 14', '15', 'Activate or login to see the line fill')
+            +expressCardActivate('Lvl 13', '18', 'Activate or login to see the line fill')
+            +expressCardActivate('Lvl 12', '22', 'Activate or login to see the line fill')
+            +expressCardActivate('Lvl 11', '27', 'Activate or login to see the line fill')
+            +expressCardActivate('Lvl 10', '33', 'Activate or login to see the line fill')
+            +expressCardActivate('Lvl 9', '33', 'Activate or login to see the line fill')
+            +expressCardActivate('Lvl 8', '22', 'Activate or login to see the line fill')
+            +expressCardActivate('Lvl 7', '27', 'Activate or login to see the line fill')
+            +expressCardActivate('Lvl 6', '33', 'Activate or login to see the line fill')
+            +expressCardActivate('Lvl 5', '33', 'Activate or login to see the line fill')
+            +expressCardActivate('Lvl 4', '22', 'Activate or login to see the line fill')
+            +expressCardActivate('Lvl 3', '27', 'Activate or login to see the line fill')
+            +expressCardActivate('Lvl 2', '33', 'Activate or login to see the line fill')
+            +expressCard('Lvl 1', '40', 'Activate or login to see the line fill', '0', '0')
+        .express-footer
+            a(href="#!" data-bs-toggle="modal" data-bs-target="#marketingLegendModal").btn.btn-question.btn-icons-left
+                img(src="./img/icons/question.svg", alt="question")
+                span Marketing legend
+            span All prices in BNB
+.express-block.express-drive.dropdownParent
+    .arrow-down.dropdownItem
+        img(src="./img/icons/menu-icon.svg", alt="menu-arrow")
+    .express-title Express 
+        p Drive
+    .express-game-checklist-row
+        .express-game-checklist-item.done
+        .express-game-checklist-item.done
+        .express-game-checklist-item.done
+        .express-game-checklist-item.done
+        .express-game-checklist-item.done
+        .express-game-checklist-item.done
+        .express-game-checklist-item.express-max-process.process
+        .express-game-checklist-item.express-max-process.process
+    .express-card-content.dropdownBlock
+        .express-card-wrapper
+            +expressCard('Lvl 1D', '0.075', 'Activate or login to see the line fill', '15.8', '0.5')
+            +expressCard('Lvl 2D', '0.075', 'Activate or login to see the line fill', '15.8', '0.5')
+            +expressCard('Lvl 3D', '0.075', 'Activate or login to see the line fill', '15.8', '0.5')
+            +expressCard('Lvl 4D', '0.075', 'Activate or login to see the line fill', '15.8', '0.5')
+            +expressCard('Lvl 5D', '0.075', 'Activate or login to see the line fill', '15.8', '0.5')
+            +expressCard('Lvl 6D', '0.075', 'Activate or login to see the line fill', '15.8', '0.5')
+            +expressCardAvailable('Lvl 7D', '0.075', '2 days')
+            +expressCardAvailable('Lvl 8D', '0.075', '2 days')
+        .express-footer
+            a(href="#!" data-bs-toggle="modal" data-bs-target="#marketingLegendModal").btn.btn-question.btn-icons-left
+                img(src="./img/icons/question.svg", alt="question")
+                span Marketing legend
+            span All prices in BNB

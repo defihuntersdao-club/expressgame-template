@@ -1,0 +1,90 @@
+.header-account {
+    margin-top: 18px;
+    margin-bottom: 25px;
+    background: #78017A;
+    display: flex;
+    justify-content: center;
+    z-index: 5;
+    position: relative;
+}
+.header-account-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 8px 18px;
+    z-index: 5;
+    position: relative;
+    span {
+       padding-right: 16px; 
+    }
+    .inputblock-input {
+        input {          
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid transparent;
+            &:focus {
+                border: 1px solid rgba($color: #fff, $alpha: .3);
+            }
+        }
+        
+    }
+}
+.header-account-login {
+    display: flex;
+    align-items: center;
+    .close {
+        margin-left: 14px;
+    }
+}
+.header-account-preview {
+    display: flex;
+    align-items: center;
+    form {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .header-account-wrapper {
+        flex-direction: column;
+        align-items: flex-end;
+        width: auto;
+    }
+    .header-account-preview {
+        margin-bottom: 14px;
+    }
+    .header-account-login .close {
+        margin-left: 18px;
+    }
+    .header-account-login .btn-pink {
+        width: 239px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .header-account-wrapper {
+        padding: 8px;
+        align-items: center;
+        span {
+            font-size: 14px;
+        }
+        .inputblock-input input {
+            max-width: 145px;
+        }
+    }
+    .header-account-login .btn-pink {
+        width: 225px;
+    }
+    .header-account .inputblock-input {
+        margin-right: 11px;
+    }
+    .header-account-wrapper span {
+        padding-right: 11px;
+        white-space: nowrap;
+    }
+    .header-account-login .close {
+        margin-left: 11px;
+    }
+}

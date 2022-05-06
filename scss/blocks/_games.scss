@@ -1,0 +1,120 @@
+.games {
+    margin-bottom: 60px;
+}
+.express-game {
+    background-image: url('../img/bg1.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    padding: 30px 35px 40px 37px;
+    margin-bottom: 17px;
+}
+.express-game-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 27px;
+    font-size: 27px;
+    font-weight: 700;
+}
+.express-game-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.express-game-checklist {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 275px;
+}
+.express-game-checklist-item {
+    width: 25px;
+    min-width: 25px;
+    height: 25px;
+    margin-bottom: 9px;
+    background: rgba(2, 5, 63, 0.4);
+    border-radius: 5px;
+    &.done {
+        background: linear-gradient(320.27deg, #0E3597 -0.87%, #AB0FAE 83.01%);
+    }
+    &.process {
+        background-image: url('../img/icons/clock-pink.svg');
+        background-repeat: no-repeat;
+        background-size: 100% 15px;
+        background-position: center;
+    }
+}
+.express-game-checklist-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.express-game-checklist-row .express-game-checklist-item:not(:last-child) {
+    margin-right: 9px;
+}
+.express-game-hint {
+    display: flex;
+    align-items: center;
+    span {
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.6);
+        padding-left: 10px;
+    }
+}
+
+.games.missed-profit {
+    .express-game {
+        background-image: url('../img/bg2.png');
+    }
+    .express-game-checklist-item {
+        background-color: rgba(2, 5, 63, 0.4);
+    }
+    .express-game-checklist-item.done {
+        background: linear-gradient(320.27deg, #0E3597 -0.87%, #AB0FAE 83.01%);
+    }
+    .express-game-checklist-item.attention {
+        background-color: #C42772;
+        background-image: url('../img/icons/attention.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .express-game-coins {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        span {
+            font-size: 14px;
+            color: #C32772;
+            font-weight: 700;
+            line-height: 1;
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    .express-game-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .express-game-checklist {
+        margin-bottom: 25px;
+    }
+}
+@media screen and (max-width: 575px) {
+    .express-game {
+        padding: 23px 18px 32px 18px;
+    }
+    .express-game-title {
+        font-size: 16px;
+    }
+    .express-game-coins {
+        font-size: 22px;
+    }
+    .express-game-header {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 19px;
+    }
+    .games.missed-profit .express-game-coins {
+        align-items: flex-start;
+    }
+}

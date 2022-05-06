@@ -1,0 +1,222 @@
+.express-game-title {
+    display: flex;
+    align-items: center;
+}
+
+.express-game-bnb {
+    margin-left: auto;
+    font-size: 28px;
+    font-weight: 700;
+}
+.express-block {
+    background: #02053F;
+    border-radius: 10px;
+    padding: 31px 25px 36px 36px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+    .arrow-down {
+        position: absolute;
+        right: 26px;
+        top: 31px;
+    }
+    &.express-active {
+        background: radial-gradient(61.06% 97.74% at 60.18% 115.79%, #7B2689 0%, #02053F 100%)
+    }
+    .express-game-checklist-row {
+        max-height: unset;
+        opacity: 1;
+        transition: .2s ease-in;
+    }
+    &.dropdown-show {
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='920' height='589' viewBox='0 0 920 589' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3crect x='0.841797' y='0.993652' width='919.158' height='587.808' rx='10' fill='url(%23paint0_radial_56_1324)'/%3e%3cdefs%3e%3cradialGradient id='paint0_radial_56_1324' cx='0' cy='0' r='1' gradientUnits='userSpaceOnUse' gradientTransform='translate(553.981 681.608) rotate(-103.052) scale(589.764 580.449)'%3e%3cstop stop-color='%237B2689'/%3e%3cstop offset='1' stop-color='%2302053F'/%3e%3c/radialGradient%3e%3c/defs%3e%3c/svg%3e");
+        background-size: cover;
+        .express-game-checklist-row {
+            max-height: 0;
+            opacity: 0;
+        }
+    }
+    .expres-card-available {
+        background: #02053F;
+        .exprees-card-info {
+            height: 100%;
+            margin-top: 0;
+        }
+    }
+}
+
+.express-title {
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 20px; 
+    display: flex;
+    p {
+        padding-left: 5px;
+    }
+}
+.express-max {
+    .express-card {
+        .btn {
+            background: linear-gradient(295.22deg, #D34091 18.18%, #FCA04B 75.18%);
+            &:hover {
+                background: linear-gradient(475.22deg, #D34091 18.18%, #FCA04B 75.18%);
+            }
+        }
+    }
+    .express-title {
+        p {
+            background: linear-gradient(271.5deg, #D34091 1.28%, #FCA04B 96.71%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+    }
+}
+.express-drive {
+    .express-title {
+        p {
+            color: #C605CA;
+        }
+    }
+}
+.express-max-color {
+    background: linear-gradient(271.5deg, #D34091 1.28%, #FCA04B 96.71%);
+}
+.express-max-process {
+    background: rgba(0, 150, 234, 0.4);
+}
+.express-card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -14px;
+    margin-right: -14px;
+}
+.express-card {
+    border: 2px solid #78017A;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 23px;
+    background: #25285E;
+    border-radius: 15px;
+    padding: 15px 13px;
+    width: 196px;
+    height: 185px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .btn {
+        font-size: 14px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+        justify-content: center;
+    }
+}
+.express-card-title-block {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.express-card-lvl {
+    color: rgba(255, 255, 255, 0.6);
+}
+.express-card-coins {
+    display: flex;
+}
+.coin-icons {
+    margin-right: 6px;
+}
+.exprees-card-text {
+    max-width: 113px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 11px;
+}
+.express-card-bonus-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+.express-card-bonus {
+    white-space: nowrap;
+    font-size: 12px;
+    line-height: 1;
+    span {
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 8px;
+    }
+}
+.exprees-card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 26px;
+    img {
+        width: 30px;
+        max-width: 30px;
+        margin-bottom: 13px;
+    }
+    p {
+        color: rgba(255, 255, 255, 0.6);
+    }
+}
+.express-footer {
+    span {
+        padding-left: 21px;
+    }
+}
+
+@media screen and (max-width: 704px) {
+    .express-block {
+        padding-left: 19px;
+        padding-right: 19px;
+    }
+    .express-card {
+        width: 46%;
+    }
+}
+@media screen and (max-width: 556px) {
+    .express-card {
+        width: 128px;
+        margin-left: 5px;
+        margin-right: 5px;
+        padding-left: 8px;
+        padding-right: 8px;
+        min-height: 190px;
+        height: auto;
+        .btn {
+            white-space: normal;
+            font-size: 12px;
+            height: 50px;
+            line-height: 1.2;
+        }
+    }
+    .express-game-title + .title-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 16px;
+        .express-game-bnb {
+            margin-left: 0;
+        }
+    }
+    .express-footer {
+        span {
+            font-size: 12px;
+        }
+        .btn {
+            padding: 7px;
+            height: 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 447px) {
+    .express-card-wrapper {
+        justify-content: center;
+    }
+}

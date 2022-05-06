@@ -1,0 +1,116 @@
+.account-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 29px;
+}
+.account-info-wrapper {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+.account-avatar {
+    width: 105px;
+    min-width: 105px;
+    height: 105px;
+    background: #02053F;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 27px;
+}
+.account-avatar-img {
+    height: 60px;
+    width: 60px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+.account-info-id {
+    font-size: 28px;
+    font-weight: 700;
+}
+.account-wallet-block {
+    display: flex;
+    align-items: center;
+    margin-bottom: 9px;
+    span {
+        font-weight: 700;
+        padding-right: 10px;
+    }
+}
+.account-invited-block {
+    display: flex;
+    align-items: center;
+}
+.account-invited {
+    color: rgba(255, 255, 255, 0.6);
+    margin-right: 12px;
+    white-space: nowrap;
+}
+.account-info-link-block {
+    background: #02053F;
+    border-radius: 10px;
+    padding: 18px;
+    width: 48%;
+}
+.account-info-link {
+    display: flex;
+    align-items: center;
+    span {
+        padding-right: 10px;
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.6);
+    }
+}
+.account-link {
+    color: #3D8AFF;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 13px;
+    display: inline-block;
+}
+
+.account-info-btn-block {
+    .btn + .btn {
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .account-info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .account-info-wrapper {
+        margin-bottom: 30px;
+    }
+    .account-info-link-block {
+        width: 383px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .account-invited-id.activity-id {
+        margin-bottom: 0;
+    }
+}
+@media screen and (max-width: 575px) {
+    .account-info-id {
+        font-size: 20px;
+    }
+    .account-link {
+        font-size: 18px;
+    }
+    .account-invited-block {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .account-invited {
+        margin-bottom: 10px;
+    }
+    .account-info-link-block {
+        width: 100%;
+    }
+}

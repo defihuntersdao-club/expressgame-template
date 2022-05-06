@@ -1,0 +1,17 @@
+.modal.fade#chooseCoinModal(tabindex="-1", role="dialog", aria-hidden="true")
+    .modal-dialog.modal-dialog-centered(role="document")
+        .modal-content.modal-content-choose-coins
+            .modal-body
+                .choose-coin-wrapper
+                    a(href="index-user.html").choose-coin
+                        .choose-coin-img
+                            img(src="./img/metamask.svg", alt="MetaMask" loading="lazy")
+                        .choose-coin-title MetaMask
+                        .choose-coin-text Connect to your MetaMask Wallet
+                    a(href="index-user.html").choose-coin
+                        .choose-coin-img
+                            img(src="./img/walletconnect.svg", alt="MetaMask" loading="lazy")
+                        .choose-coin-title WalletConnect
+                        .choose-coin-text Scan with WalletConnect to connect
+    .modal-close(data-bs-dismiss="modal")
+        img(src="./img/icons/close-white.svg", alt="close")

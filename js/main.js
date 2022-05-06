@@ -1,29 +1,5 @@
 'use strict';
 
-const scrollContent = document.querySelectorAll('.custom-scroll');
-
-var scrollContentItem = Array.prototype.slice.call(scrollContent);
-
-if ( scrollContentItem ) {
-    scrollContentItem.forEach(function(element, key){
-        new PerfectScrollbar(element, {
-            suppressScrollX: true,
-        });
-    });
-}
-
-const scrollContentWidth = document.querySelectorAll('.custom-scroll-width');
-
-var scrollContentWidthItem = Array.prototype.slice.call(scrollContentWidth);
-
-if ( scrollContentWidthItem ) {
-    scrollContentWidthItem.forEach(function(element, key){
-        new PerfectScrollbar(element, {
-            suppressScrollY: true,
-        });
-    });
-}
-
 let previewModeForm = document.getElementById('preview-mode-form');
 if ( previewModeForm ) {
     let previewModeBtn = previewModeForm.querySelector('.btn');
@@ -53,7 +29,7 @@ if ( previewModeForm ) {
 }
 
 customSelect('select', {
-    panelClass: 'custom-select-panel custom-scroll',
+    panelClass: 'custom-select-panel',
 });
 
 let videoPlug = document.getElementsByClassName('video-plug')[0];
@@ -87,7 +63,7 @@ function showDropdow(el) {
 function hideDropdow(el) {
     if ( el ) {
         el.classList.remove('dropdown-show');
-    el.querySelector('.dropdownBlock').setAttribute('style', `opacity:0; height:0; max-height:0;`);
+    el.querySelector('.dropdownBlock').setAttribute('style', 'opacity:0; height:0; max-height:0;');
         if ( el.querySelector('.dropdownItem img') ) {
             el.querySelector('.dropdownItem img').style.transform = 'rotate(0)';
         }

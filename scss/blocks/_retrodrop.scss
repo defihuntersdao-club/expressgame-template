@@ -1,0 +1,130 @@
+.retrodrop {
+    background-color: #78017A;
+    padding: 31px 35px;
+    border-radius: 10px;
+    margin-bottom: 56px;
+    position: relative;
+    .btn {
+        height: auto;
+        line-height: 1;
+        display: inline-flex;
+        margin-bottom: 21px;
+        align-self: center;
+    }
+    .link {
+        align-self: flex-start;
+        align-items: center;
+    }
+    &::before {
+        position: absolute;
+        content: url('../img/gift.png');
+        top: 23px;
+        right: 58px;
+    }
+}
+.retrodrop-title {
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 1;
+}
+.retrodrop-subtitle {
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 22px;
+}
+.retrodrop-text {
+    max-width: 638px;
+    margin-bottom: 47px;
+}
+.retrodrop-balance-info {
+    color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    span {
+        white-space: nowrap;
+    }
+}
+.retrodrop-balance {
+    border: 1px solid #FB9D4E;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    margin-bottom: 38px;
+    span {
+        padding-left: 10px;
+    }
+}
+.retrodrop-filed {
+    background: linear-gradient(271.5deg, #D34091 1.28%, #FCA04B 96.71%);
+    height: inherit;
+}
+.retrodrop-timer {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 1;
+}
+.retrodrop-unconnetc {
+    color: #FFD663;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.retrodrop-unconnetc-blur {
+    height: 50px;
+    filter: blur(15px);
+    background: #FFFFFF;
+    width: 100%;
+    margin-bottom: 14px;
+}
+
+@media screen and (max-width: 991px) {
+    .retrodrop {
+        &::before {
+            content: url('../img/gift-small.png');
+            top: 20px;
+            right: 20px;
+        }
+        .btn {
+            line-height: inherit;
+        }
+    }
+    .retrodrop-title {
+        max-width: 250px;
+    }
+    .retrodrop .link {
+        align-self: center;
+    }
+
+}
+@media screen and (max-width: 767px) {
+    .retrodrop-balance-info {
+        flex-direction: column;
+    }
+    .retrodrop-text {
+        margin-bottom: 32px;
+    }
+}
+@media screen and (max-width: 575px) {
+    .retrodrop-title {
+        font-size: 24px;
+        max-width: 150px;
+    }
+    .retrodrop-unconnetc-blur {
+        height: 117px;
+    }
+    .retrodrop-timer {
+        font-size: 24px;
+        text-align: left;
+    }
+    .retrodrop {
+        padding: 30px 20px;
+        .btn {
+            height: auto;
+        }
+    }
+    
+}
