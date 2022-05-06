@@ -123,7 +123,9 @@ dropDownItemNode.forEach(function(element, key){
 
 window.addEventListener('resize', function(){
     let menuBlock = document.querySelector('.aside');
-    menuBlock.querySelector('.dropdownBlock').setAttribute('style', 'opacity:1; height:auto; max-height:initial;');
+    if ( menuBlock ) {
+        menuBlock.querySelector('.dropdownBlock').setAttribute('style', 'opacity:1; height:auto; max-height:initial;');
+    }
     if ( window.innerWidth < 992 ) {
         let menuElement = document.querySelector('.aside');
         hideDropdow(menuElement);
