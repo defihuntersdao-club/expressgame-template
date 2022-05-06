@@ -89,11 +89,13 @@ function showDropdow(el) {
 }
 
 function hideDropdow(el) {
-    el.classList.remove('dropdown-show');
-    el.querySelector('.dropdownBlock').style.maxHeight = "0px";
-    el.querySelector('.dropdownBlock').style.opacity = 0;
-    if ( el.querySelector('.dropdownItem img') ) {
-        el.querySelector('.dropdownItem img').style.transform = 'rotate(0)';
+    if ( el ) {
+        el.classList.remove('dropdown-show');
+        el.querySelector('.dropdownBlock').style.maxHeight = "0px";
+        el.querySelector('.dropdownBlock').style.opacity = 0;
+        if ( el.querySelector('.dropdownItem img') ) {
+            el.querySelector('.dropdownItem img').style.transform = 'rotate(0)';
+        }
     }
 }
 
@@ -115,6 +117,9 @@ dropDownItemNode.forEach(function(element, key){
         if ( window.screen.width < 992 ) {
             if ( e.target.closest('.aside-item') ||  e.target.classList.contains('.aside-item') ) {
                 hideDropdow(e.target.closest('.dropdownParent'));
+                let cloneItem = e.target.closest('.dropdownParent').querySelector('.active .aside-item-block').cloneNode( true );
+                document.querySelector('.aside-mobile-block').innerHTML = "";
+                document.querySelector('.aside-mobile-block').appendChild(cloneItem);
             }
         }
     });
@@ -128,8 +133,20 @@ window.addEventListener('resize', function(){
             element.querySelector('.dropdownBlock').style.maxHeight = 'initial';
         });
     } else {
-        dropDownItemNode.forEach(function(element, key){
-            hideDropdow(element);
-        });
+        let menuElement = document.querySelector('.aside');
+        hideDropdow(menuElement);
     }
 });
+
+let btnStats = document.querySelector('.btn-stats');
+if ( btnStats  ) {
+    btnStats.addEventListener('click', function(){
+        let divRowWrapper = this.parentNode.querySelector('.divTableRowWrapper ');
+        let innerDivRowWrapper = divRowWrapper.innerHTML;
+        console.log(divRowWrapper);
+    
+        divRowWrapper.innerHTML += innerDivRowWrapper;
+    
+    });
+}
+
