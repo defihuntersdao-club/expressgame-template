@@ -1,5 +1,26 @@
 'use strict';
 
+let scrollH = document.querySelectorAll('.custom-scroll');
+
+if ( scrollH ) {
+    var scrollContentItem = Array.prototype.slice.call(scrollH);
+
+    scrollContentItem.forEach(function(element, key){
+        new PerfectScrollbar(element);
+    });
+}
+
+let scrollW = document.querySelectorAll('.custom-scroll-width');
+
+if ( scrollW ) {
+    var scrollContentItemWidth = Array.prototype.slice.call(scrollW);
+
+    scrollContentItemWidth.forEach(function(element, key){
+        new PerfectScrollbar(element);
+    });
+}
+
+
 let previewModeForm = document.getElementById('preview-mode-form');
 if ( previewModeForm ) {
     let previewModeBtn = previewModeForm.querySelector('.btn');
@@ -12,7 +33,6 @@ if ( previewModeForm ) {
 
     previewModeBtn.addEventListener('click', function(){
         if ( previewModeInput.value != 0 ) {
-            console.log(previewModeInput.value);
             locationUserIdPage();
         } else {
             errorMessage.style.display = 'flex';
@@ -63,7 +83,7 @@ function showDropdow(el) {
 function hideDropdow(el) {
     if ( el ) {
         el.classList.remove('dropdown-show');
-    el.querySelector('.dropdownBlock').setAttribute('style', 'opacity:0; height:0; max-height:0;');
+        el.querySelector('.dropdownBlock').setAttribute('style', 'opacity:0; height:0; max-height:0;');
         if ( el.querySelector('.dropdownItem img') ) {
             el.querySelector('.dropdownItem img').style.transform = 'rotate(0)';
         }
