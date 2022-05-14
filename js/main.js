@@ -143,3 +143,10 @@ if ( btnStats  ) {
     });
 }
 
+let preloaderPage = document.getElementById('preloader');
+
+if ( preloaderPage ) {
+    document.getElementsByTagName('body')[0].setAttribute('style', 'overflow:hidden;');
+} else {
+    document.getElementsByTagName('body')[0].setAttribute('style', 'overflow:hidden;');
+}

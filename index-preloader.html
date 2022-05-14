@@ -18,26 +18,25 @@
 			<div class="decor-2"></div>
 			<div class="decor-3"></div>
 		</div>
+		<div id="preloader">
+			<div id="loader"></div>
+		</div>
 		<div class="container">
-			<header class="header header-user">
+			<header class="header">
 				<div class="header-wrapper"><a class="header-logo-block" href="/">
 						<div class="header-logo" style="display:none"><img src="./img/logo.png" alt="logo"/></div>
 						<div class="header-logo-name">
 							<p>Hunters Game</p>
-						</div></a>
-					<div class="header-user"><a class="header-user-btn header-user-btn-single" href="#!"><img src="./img/icons/smart-chain.svg" alt="Smart Chain"/><span>Smart Chain</span></a>
-						<div class="header-user-btn"><a class="header-user-btn-item" href="#!"><img src="./img/icons/bnb.svg" alt="BNB"/><span>0.019 BNB</span></a><a class="header-user-btn-item header-user-btn-wallet" href="#!" data-bs-toggle="modal" data-bs-target="#walletModal"><img src="./img/icons/wallet.svg" alt="wallet"/><span>0хС6...е8</span></a></div>
-					</div>
-				</div>
+						</div></a><a class="btn btn-bright" href="#!" data-bs-toggle="modal" data-bs-target="#chooseCoinModal">Connect Wallet</a></div>
 			</header>
 			<div class="banner">
 				<div class="banner-wrapper">
 					<div class="banner-text-block">
-						<h1 class="title-1">Express game</h1>
-						<div class="subtitle">Joint Forsage BUSD and Activate Express in one transaction with BNB</div>
-						<div class="banner-btn-block"><a class="btn btn-purple btn-icons-left" href="#!" data-bs-toggle="modal" data-bs-target="#registrationModal"><span>Fast Registration</span><img src="./img/icons/arrow-double.svg" alt="Connect Wallet"/></a></div>
+						<h1 class="title-1">Hunters game</h1>
+						<div class="subtitle">Connect wallet to Register or Login</div>
+						<div class="banner-btn-block"><a class="btn btn-purple btn-icons-left" href="#!" data-bs-toggle="modal" data-bs-target="#chooseCoinModal"><img src="./img/icons/wallet.svg" alt="Connect Wallet"/><span>Connect Wallet</span></a><a class="btn" href="#!">Help me</a></div>
 					</div>
-					<div class="banner-img"><img src="./img/banner2.png" alt="image"/></div>
+					<div class="banner-img"><img src="./img/banner.png" alt="image"/></div>
 				</div>
 				<div class="banner-description"><img src="./img/icons/clock.svg" alt="clock"/>
 					<p><strong>Level 1 </strong>available in: <strong>01d 09h 43m 20s</strong></p>
@@ -47,17 +46,10 @@
 				<div class="retrodrop-title">2500 BNB Retro Drop</div>
 				<div class="retrodrop-subtitle">1 000 000 USD +</div>
 				<div class="retrodrop-text">Free 1st Level in Express.game for Forsage BUSD members with ID up to 289780 (members registered before 16.03.2022 18:00 UTC). Valid before 30.04.2022 18:00.</div>
-				<div class="retrodrop-balance-wrapper">
-					<div class="retrodrop-balance-info">
-						<p>Retro Drop contract balance: <span>595.750/2500 BNB</span></p>
-						<p>Retro Drop claim count: <span>38087</span></p>
-					</div>
-					<div class="retrodrop-balance">
-						<div class="retrodrop-filed" style="width: 20%"></div><span>76.170%</span>
-					</div>
-				</div>
+				<div class="retrodrop-unconnetc">Connect wallet to get Retro Drop contract balance</div>
+				<div class="retrodrop-unconnetc-blur"></div>
 				<div class="retrodrop-timer">Retro Drop ends in: 04:01:21:49</div>
-				<div class="btn-group-col"><a class="btn btn-dark-pink" href="#!">Login to your account to claim free level</a><a class="link link-white link-window" href="#!">Retro Drop contract link</a></div>
+				<div class="btn-group-col"><a class="btn btn-dark-pink lock" href="#!">Login to your account to claim free level</a><a class="link link-white link-window" href="#!">Retro Drop contract link</a></div>
 			</div>
 			<section class="preview-mode">
 				<div class="title-block">
@@ -186,63 +178,230 @@
 					</div>
 				</div>
 			</section>
-			<section class="about">
+			<section class="levels">
 				<div class="title-block">
-					<h2 class="title-2">About</h2>
-					<div class="subtitle">Contract game created by DeFi Hunters DAO with passive yields in BNB directly to your wallet.<br/>All players are placed randomly in 16 levels with unlimited cycles.<br/>Rewards are distributed as follows:<br/>- 74% of level value for each of your level cycle<br/>- 13%-8%-5% of the level value from partners down to 3 in-depth when they activate levels.</div>
+					<h2 class="title-2">Hunters game levels start schedule</h2>
 				</div>
-				<div class="short-table">
-					<div class="short-table-item">
-						<div class="short-table-title">Contracts</div>
-						<div class="short-table-info short-table-wallet">
-							<div class="about-wallet-number">0x4c978...8F8d2B</div>
-							<div class="about-wallet-link"><a class="copy" href="#!">
-									<svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<g clip-path="url(#clip0_2_306)">
-											<path d="M20.2681 0.97876H10.1274C8.70586 0.97876 7.54932 2.13531 7.54932 3.55688V6.13501H9.26807V3.55688C9.26807 3.08303 9.65358 2.69751 10.1274 2.69751H20.2681C20.7419 2.69751 21.1274 3.08303 21.1274 3.55688V13.5256C21.1274 13.9995 20.7419 14.385 20.2681 14.385H17.8618V16.1038H20.2681C21.6896 16.1038 22.8462 14.9472 22.8462 13.5256V3.55688C22.8462 2.13531 21.6896 0.97876 20.2681 0.97876ZM13.5649 7.85376H3.42432C2.00274 7.85376 0.846191 9.01031 0.846191 10.4319V20.4006C0.846191 21.8222 2.00274 22.9788 3.42432 22.9788H13.5649C14.9865 22.9788 16.1431 21.8222 16.1431 20.4006V10.4319C16.1431 9.01031 14.9865 7.85376 13.5649 7.85376ZM14.4243 20.4006C14.4243 20.8745 14.0388 21.26 13.5649 21.26H3.42432C2.95046 21.26 2.56494 20.8745 2.56494 20.4006V10.4319C2.56494 9.95802 2.95046 9.57251 3.42432 9.57251H13.5649C14.0388 9.57251 14.4243 9.95802 14.4243 10.4319V20.4006Z" fill="#3D8AFF"></path>
-										</g>
-										<defs>
-											<clipPath id="clip0_2_306">
-												<rect width="22" height="22" fill="white" transform="translate(0.846191 0.97876)"></rect>
-											</clipPath>
-										</defs>
-									</svg></a><a class="link" href="#!">
-									<svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<g clip-path="url(#clip0_2_311)">
-											<path d="M6.18947 22.9788C4.78405 22.9788 3.45683 22.4219 2.43285 21.398C1.36065 20.3257 0.800599 18.9209 0.855771 17.4421C0.91279 15.9149 1.60274 14.4478 2.85106 13.1995L5.09867 10.9427C5.43356 10.6064 5.97768 10.6053 6.31399 10.9402C6.65026 11.2751 6.65142 11.8193 6.31648 12.1555L4.06768 14.4136C2.24533 16.2359 2.07337 18.6077 3.64826 20.1826C5.22319 21.7577 7.59502 21.5856 9.41603 19.7645L12.5049 16.6756C13.4412 15.7394 13.9575 14.6704 13.998 13.5842C14.0352 12.5886 13.6534 11.6381 12.9231 10.9078C12.6784 10.6631 12.4077 10.4555 12.1184 10.2907C11.706 10.0558 11.5621 9.53105 11.797 9.11868C12.0319 8.70626 12.5567 8.56241 12.969 8.79727C13.3917 9.03807 13.7852 9.33928 14.1385 9.69252C15.2107 10.7647 15.7707 12.1696 15.7156 13.6483C15.6586 15.1756 14.9686 16.6427 13.7203 17.891L10.6314 20.9799C9.38303 22.2282 7.91599 22.9181 6.38876 22.9752C6.32224 22.9775 6.25568 22.9788 6.18947 22.9788ZM11.9072 14.839C12.1421 14.4266 11.9982 13.9018 11.5858 13.6669C11.2965 13.5021 11.0257 13.2945 10.7811 13.0499C9.20617 11.4749 9.37813 9.10312 11.1992 7.28203L14.2881 4.19318C16.1093 2.37212 18.481 2.20012 20.0559 3.77501C21.6308 5.3499 21.4588 7.72172 19.6365 9.54407L17.3877 11.8021C17.0527 12.1384 17.0538 12.6825 17.3901 13.0174C17.7264 13.3524 18.2705 13.3512 18.6055 13.0149L20.8531 10.7581C22.1014 9.50982 22.7913 8.04274 22.8484 6.51555C22.9035 5.03678 22.3435 3.63188 21.2713 2.55968C20.1991 1.48744 18.7935 0.927475 17.3154 0.982561C15.7882 1.03958 14.3211 1.72953 13.0728 2.97785L9.9839 6.0667C8.73558 7.31502 8.04567 8.7821 7.98861 10.3093C7.93344 11.7881 8.49349 13.193 9.56569 14.2652C9.91893 14.6184 10.3124 14.9196 10.7352 15.1604C10.8694 15.2369 11.0155 15.2732 11.1597 15.2732C11.4585 15.2732 11.7488 15.1171 11.9072 14.839Z" fill="#3D8AFF"></path>
-										</g>
-										<defs>
-											<clipPath id="clip0_2_311">
-												<rect width="22" height="22" fill="white" transform="translate(0.852051 0.97876)"></rect>
-											</clipPath>
-										</defs>
-									</svg></a></div>
+				<div class="divTable">
+					<div class="divTableBody">
+						<div class="divTableRow divTableHeader">
+							<div class="divTableCell">Start date</div>
+							<div class="divTableCell">Level</div>
+							<div class="divTableCell">Value</div>
+							<div class="divTableCell">Time left</div>
+						</div>
+						<div class="divTableRow">
+							<div class="divTableCell"><span class="preloader-bar">16.03.2022 23:00</span></div>
+							<div class="divTableCell"><span class="preloader-bar">16</span></div>
+							<div class="divTableCell"><span class="preloader-bar">8 BNB</span></div>
+							<div class="divTableCell"><span class="preloader-bar">Available</span></div>
+						</div>
+						<div class="divTableRow">
+							<div class="divTableCell"><span class="preloader-bar">17.03.2022 23:00</span></div>
+							<div class="divTableCell"><span class="preloader-bar">15</span></div>
+							<div class="divTableCell"><span class="preloader-bar">6.5 BNB</span></div>
+							<div class="divTableCell"><span class="preloader-bar">Available</span></div>
+						</div>
+						<div class="divTableRow">
+							<div class="divTableCell"><span class="preloader-bar">18.03.2022 23:00</span></div>
+							<div class="divTableCell"><span class="preloader-bar">14</span></div>
+							<div class="divTableCell"><span class="preloader-bar">4.4 BNB</span></div>
+							<div class="divTableCell"><span class="preloader-bar">Available</span></div>
+						</div>
+						<div class="divTableRow">
+							<div class="divTableCell"><span class="preloader-bar">19.03.2022 23:00</span></div>
+							<div class="divTableCell"><span class="preloader-bar">13</span></div>
+							<div class="divTableCell"><span class="preloader-bar">3.2 BNB</span></div>
+							<div class="divTableCell"><span class="preloader-bar">Available</span></div>
+						</div>
+						<div class="divTableRow">
+							<div class="divTableCell"><span class="preloader-bar">20.03.2022 23:00</span></div>
+							<div class="divTableCell"><span class="preloader-bar">12</span></div>
+							<div class="divTableCell"><span class="preloader-bar">2.2 BNB</span></div>
+							<div class="divTableCell"><span class="preloader-bar">Available</span></div>
+						</div>
+						<div class="divTableRow">
+							<div class="divTableCell"><span class="preloader-bar">21.03.2022 23:00</span></div>
+							<div class="divTableCell"><span class="preloader-bar">11</span></div>
+							<div class="divTableCell"><span class="preloader-bar">1.6 BNB</span></div>
+							<div class="divTableCell"><span class="preloader-bar">Available</span></div>
+						</div>
+						<div class="divTableRow">
+							<div class="divTableCell"><span class="preloader-bar">23.03.2022 23:00</span></div>
+							<div class="divTableCell"><span class="preloader-bar">10</span></div>
+							<div class="divTableCell"><span class="preloader-bar">1.1 BNB</span></div>
+							<div class="divTableCell"><span class="preloader-bar">Available</span></div>
+						</div>
+						<div class="divTableRow">
+							<div class="divTableCell"><span class="preloader-bar">24.03.2022 23:00</span></div>
+							<div class="divTableCell"><span class="preloader-bar">9</span></div>
+							<div class="divTableCell"><span class="preloader-bar">0.8 BNB</span></div>
+							<div class="divTableCell"><span class="preloader-bar">Available</span></div>
+						</div>
+						<div class="divTableRow">
+							<div class="divTableCell"><span class="preloader-bar">25.03.2022 23:00</span></div>
+							<div class="divTableCell"><span class="preloader-bar">8</span></div>
+							<div class="divTableCell"><span class="preloader-bar">0.55 BNB</span></div>
+							<div class="divTableCell"><span class="preloader-bar">Available</span></div>
+						</div>
+						<div class="divTableRow">
+							<div class="divTableCell"><span class="preloader-bar">27.03.2022 23:00</span></div>
+							<div class="divTableCell"><span class="preloader-bar">7</span></div>
+							<div class="divTableCell"><span class="preloader-bar">0.4 BNB</span></div>
+							<div class="divTableCell"><span class="preloader-bar">Available</span></div>
+						</div>
+						<div class="divTableRow">
+							<div class="divTableCell"><span class="preloader-bar">28.03.2022 23:00</span></div>
+							<div class="divTableCell"><span class="preloader-bar">6</span></div>
+							<div class="divTableCell"><span class="preloader-bar">0.28 BNB</span></div>
+							<div class="divTableCell"><span class="preloader-bar">Available</span></div>
+						</div>
+						<div class="divTableRow">
+							<div class="divTableCell"><span class="preloader-bar">30.03.2022 23:00</span></div>
+							<div class="divTableCell"><span class="preloader-bar">5</span></div>
+							<div class="divTableCell"><span class="preloader-bar">0.2 BNB</span></div>
+							<div class="divTableCell"><span class="preloader-bar">Available</span></div>
+						</div>
+						<div class="divTableRow">
+							<div class="divTableCell"><span class="preloader-bar">01.04.2022 23:00</span></div>
+							<div class="divTableCell"><span class="preloader-bar">4</span></div>
+							<div class="divTableCell"><span class="preloader-bar">0.14 BNB</span></div>
+							<div class="divTableCell"><span class="preloader-bar">Available</span></div>
+						</div>
+						<div class="divTableRow">
+							<div class="divTableCell"><span class="preloader-bar">02.04.2022 23:00</span></div>
+							<div class="divTableCell"><span class="preloader-bar">3</span></div>
+							<div class="divTableCell"><span class="preloader-bar">0.1 BNB</span></div>
+							<div class="divTableCell"><span class="preloader-bar">Available</span></div>
+						</div>
+						<div class="divTableRow">
+							<div class="divTableCell"><span class="preloader-bar">05.04.2022 23:00</span></div>
+							<div class="divTableCell"><span class="preloader-bar">2</span></div>
+							<div class="divTableCell"><span class="preloader-bar">0.07 BNB</span></div>
+							<div class="divTableCell"><span class="preloader-bar">Available</span></div>
+						</div>
+						<div class="divTableRow endtime">
+							<div class="divTableCell"><span class="preloader-bar">08.04.2022 23:00</span></div>
+							<div class="divTableCell"><span class="preloader-bar">1</span></div>
+							<div class="divTableCell"><span class="preloader-bar">0.05 BNB</span></div>
+							<div class="divTableCell"><span class="preloader-bar">1 days</span></div>
 						</div>
 					</div>
-					<div class="short-table-item">
-						<div class="short-table-block">
-							<div class="short-table-title">Members total</div>
-							<div class="short-table-info short-table-numbers">
-								<div class="about-count">71 009</div>
-								<div class="about-count-growth">+ 7 510</div>
+				</div>
+			</section>
+			<section class="about">
+				<div class="about-wrapper">
+					<div class="about-block">
+						<div class="title-block">
+							<h2 class="title-2">About Hunters game</h2>
+							<div class="subtitle">Contract game created by DeFi Hunters DAO with passive yields in BNB directly to your wallet.<br/>All players are placed randomly in 16 levels with unlimited cycles.<br/>Rewards are distributed as follows:<br/>- 74% of level value for each of your level cycle<br/>- 13%-8%-5% of the level value from partners down to 3 in-depth when they activate levels.</div>
+						</div>
+						<div class="about-block-widget">
+							<div class="about-block-video video-block">
+								<div class="video-plug"></div>
+								<video src="./img/video.mp4" controls="controls"></video>
+							</div>
+							<div class="about-block-presentation-wrapper">
+								<div class="about-block-presentation">
+									<div class="about-block-title">Hunters Game presentations</div>
+									<div class="about-block-presentation-item">
+										<div class="about-block-presentation-flag"><img src="./img/flag1.png" alt="English"/></div>
+										<div class="about-block-presentation-title">English</div><a class="icon-blue" href="#!"><img src="./img/icons/copy-white.svg" alt="copy"/></a><a class="icon-blue" href="#!"><img src="./img/icons/download-white.svg" alt="download"/></a>
+									</div>
+									<div class="about-block-presentation-item">
+										<div class="about-block-presentation-flag"><img src="./img/flag2.png" alt="Hindi"/></div>
+										<div class="about-block-presentation-title">Hindi</div><a class="icon-blue" href="#!"><img src="./img/icons/copy-white.svg" alt="copy"/></a><a class="icon-blue" href="#!"><img src="./img/icons/download-white.svg" alt="download"/></a>
+									</div>
+									<div class="about-block-presentation-item">
+										<div class="about-block-presentation-flag"><img src="./img/flag3.png" alt="Russian"/></div>
+										<div class="about-block-presentation-title">Russian</div><a class="icon-blue" href="#!"><img src="./img/icons/copy-white.svg" alt="copy"/></a><a class="icon-blue" href="#!"><img src="./img/icons/download-white.svg" alt="download"/></a>
+									</div><a class="link-more" href="#!" data-bs-toggle="modal" data-bs-target="#modalPresentations">See more</a>
+								</div>
+								<div class="about-block-brandbook">Hunters Game Brandbook</div>
 							</div>
 						</div>
 					</div>
-					<div class="short-table-item">
-						<div class="short-table-block">
-							<div class="short-table-title">Transactions made</div>
-							<div class="short-table-info short-table-numbers">
-								<div class="about-count">380 578</div>
-								<div class="about-count-growth">+ 2 573</div>
+					<div class="about-block">
+						<div class="short-table short-table-col">
+							<div class="short-table-item">
+								<div class="short-table-title">Smart Games Contracts</div>
+								<div class="short-table-info short-table-wallet">
+									<div class="about-waller-title">Express</div>
+									<div class="about-wallet-number">0x4c9...d2B</div>
+									<div class="about-wallet-link"><a class="copy" href="#!">
+											<svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<g clip-path="url(#clip0_2_306)">
+													<path d="M20.2681 0.97876H10.1274C8.70586 0.97876 7.54932 2.13531 7.54932 3.55688V6.13501H9.26807V3.55688C9.26807 3.08303 9.65358 2.69751 10.1274 2.69751H20.2681C20.7419 2.69751 21.1274 3.08303 21.1274 3.55688V13.5256C21.1274 13.9995 20.7419 14.385 20.2681 14.385H17.8618V16.1038H20.2681C21.6896 16.1038 22.8462 14.9472 22.8462 13.5256V3.55688C22.8462 2.13531 21.6896 0.97876 20.2681 0.97876ZM13.5649 7.85376H3.42432C2.00274 7.85376 0.846191 9.01031 0.846191 10.4319V20.4006C0.846191 21.8222 2.00274 22.9788 3.42432 22.9788H13.5649C14.9865 22.9788 16.1431 21.8222 16.1431 20.4006V10.4319C16.1431 9.01031 14.9865 7.85376 13.5649 7.85376ZM14.4243 20.4006C14.4243 20.8745 14.0388 21.26 13.5649 21.26H3.42432C2.95046 21.26 2.56494 20.8745 2.56494 20.4006V10.4319C2.56494 9.95802 2.95046 9.57251 3.42432 9.57251H13.5649C14.0388 9.57251 14.4243 9.95802 14.4243 10.4319V20.4006Z" fill="#3D8AFF"></path>
+												</g>
+												<defs>
+													<clipPath id="clip0_2_306">
+														<rect width="22" height="22" fill="white" transform="translate(0.846191 0.97876)"></rect>
+													</clipPath>
+												</defs>
+											</svg></a><a class="link" href="#!">
+											<svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<g clip-path="url(#clip0_2_311)">
+													<path d="M6.18947 22.9788C4.78405 22.9788 3.45683 22.4219 2.43285 21.398C1.36065 20.3257 0.800599 18.9209 0.855771 17.4421C0.91279 15.9149 1.60274 14.4478 2.85106 13.1995L5.09867 10.9427C5.43356 10.6064 5.97768 10.6053 6.31399 10.9402C6.65026 11.2751 6.65142 11.8193 6.31648 12.1555L4.06768 14.4136C2.24533 16.2359 2.07337 18.6077 3.64826 20.1826C5.22319 21.7577 7.59502 21.5856 9.41603 19.7645L12.5049 16.6756C13.4412 15.7394 13.9575 14.6704 13.998 13.5842C14.0352 12.5886 13.6534 11.6381 12.9231 10.9078C12.6784 10.6631 12.4077 10.4555 12.1184 10.2907C11.706 10.0558 11.5621 9.53105 11.797 9.11868C12.0319 8.70626 12.5567 8.56241 12.969 8.79727C13.3917 9.03807 13.7852 9.33928 14.1385 9.69252C15.2107 10.7647 15.7707 12.1696 15.7156 13.6483C15.6586 15.1756 14.9686 16.6427 13.7203 17.891L10.6314 20.9799C9.38303 22.2282 7.91599 22.9181 6.38876 22.9752C6.32224 22.9775 6.25568 22.9788 6.18947 22.9788ZM11.9072 14.839C12.1421 14.4266 11.9982 13.9018 11.5858 13.6669C11.2965 13.5021 11.0257 13.2945 10.7811 13.0499C9.20617 11.4749 9.37813 9.10312 11.1992 7.28203L14.2881 4.19318C16.1093 2.37212 18.481 2.20012 20.0559 3.77501C21.6308 5.3499 21.4588 7.72172 19.6365 9.54407L17.3877 11.8021C17.0527 12.1384 17.0538 12.6825 17.3901 13.0174C17.7264 13.3524 18.2705 13.3512 18.6055 13.0149L20.8531 10.7581C22.1014 9.50982 22.7913 8.04274 22.8484 6.51555C22.9035 5.03678 22.3435 3.63188 21.2713 2.55968C20.1991 1.48744 18.7935 0.927475 17.3154 0.982561C15.7882 1.03958 14.3211 1.72953 13.0728 2.97785L9.9839 6.0667C8.73558 7.31502 8.04567 8.7821 7.98861 10.3093C7.93344 11.7881 8.49349 13.193 9.56569 14.2652C9.91893 14.6184 10.3124 14.9196 10.7352 15.1604C10.8694 15.2369 11.0155 15.2732 11.1597 15.2732C11.4585 15.2732 11.7488 15.1171 11.9072 14.839Z" fill="#3D8AFF"></path>
+												</g>
+												<defs>
+													<clipPath id="clip0_2_311">
+														<rect width="22" height="22" fill="white" transform="translate(0.852051 0.97876)"></rect>
+													</clipPath>
+												</defs>
+											</svg></a></div>
+								</div>
+								<div class="short-table-info short-table-wallet">
+									<div class="about-waller-title">MaxDrive</div>
+									<div class="about-wallet-number">0x11c...01F</div>
+									<div class="about-wallet-link"><a class="copy" href="#!">
+											<svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<g clip-path="url(#clip0_2_306)">
+													<path d="M20.2681 0.97876H10.1274C8.70586 0.97876 7.54932 2.13531 7.54932 3.55688V6.13501H9.26807V3.55688C9.26807 3.08303 9.65358 2.69751 10.1274 2.69751H20.2681C20.7419 2.69751 21.1274 3.08303 21.1274 3.55688V13.5256C21.1274 13.9995 20.7419 14.385 20.2681 14.385H17.8618V16.1038H20.2681C21.6896 16.1038 22.8462 14.9472 22.8462 13.5256V3.55688C22.8462 2.13531 21.6896 0.97876 20.2681 0.97876ZM13.5649 7.85376H3.42432C2.00274 7.85376 0.846191 9.01031 0.846191 10.4319V20.4006C0.846191 21.8222 2.00274 22.9788 3.42432 22.9788H13.5649C14.9865 22.9788 16.1431 21.8222 16.1431 20.4006V10.4319C16.1431 9.01031 14.9865 7.85376 13.5649 7.85376ZM14.4243 20.4006C14.4243 20.8745 14.0388 21.26 13.5649 21.26H3.42432C2.95046 21.26 2.56494 20.8745 2.56494 20.4006V10.4319C2.56494 9.95802 2.95046 9.57251 3.42432 9.57251H13.5649C14.0388 9.57251 14.4243 9.95802 14.4243 10.4319V20.4006Z" fill="#3D8AFF"></path>
+												</g>
+												<defs>
+													<clipPath id="clip0_2_306">
+														<rect width="22" height="22" fill="white" transform="translate(0.846191 0.97876)"></rect>
+													</clipPath>
+												</defs>
+											</svg></a><a class="link" href="#!">
+											<svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<g clip-path="url(#clip0_2_311)">
+													<path d="M6.18947 22.9788C4.78405 22.9788 3.45683 22.4219 2.43285 21.398C1.36065 20.3257 0.800599 18.9209 0.855771 17.4421C0.91279 15.9149 1.60274 14.4478 2.85106 13.1995L5.09867 10.9427C5.43356 10.6064 5.97768 10.6053 6.31399 10.9402C6.65026 11.2751 6.65142 11.8193 6.31648 12.1555L4.06768 14.4136C2.24533 16.2359 2.07337 18.6077 3.64826 20.1826C5.22319 21.7577 7.59502 21.5856 9.41603 19.7645L12.5049 16.6756C13.4412 15.7394 13.9575 14.6704 13.998 13.5842C14.0352 12.5886 13.6534 11.6381 12.9231 10.9078C12.6784 10.6631 12.4077 10.4555 12.1184 10.2907C11.706 10.0558 11.5621 9.53105 11.797 9.11868C12.0319 8.70626 12.5567 8.56241 12.969 8.79727C13.3917 9.03807 13.7852 9.33928 14.1385 9.69252C15.2107 10.7647 15.7707 12.1696 15.7156 13.6483C15.6586 15.1756 14.9686 16.6427 13.7203 17.891L10.6314 20.9799C9.38303 22.2282 7.91599 22.9181 6.38876 22.9752C6.32224 22.9775 6.25568 22.9788 6.18947 22.9788ZM11.9072 14.839C12.1421 14.4266 11.9982 13.9018 11.5858 13.6669C11.2965 13.5021 11.0257 13.2945 10.7811 13.0499C9.20617 11.4749 9.37813 9.10312 11.1992 7.28203L14.2881 4.19318C16.1093 2.37212 18.481 2.20012 20.0559 3.77501C21.6308 5.3499 21.4588 7.72172 19.6365 9.54407L17.3877 11.8021C17.0527 12.1384 17.0538 12.6825 17.3901 13.0174C17.7264 13.3524 18.2705 13.3512 18.6055 13.0149L20.8531 10.7581C22.1014 9.50982 22.7913 8.04274 22.8484 6.51555C22.9035 5.03678 22.3435 3.63188 21.2713 2.55968C20.1991 1.48744 18.7935 0.927475 17.3154 0.982561C15.7882 1.03958 14.3211 1.72953 13.0728 2.97785L9.9839 6.0667C8.73558 7.31502 8.04567 8.7821 7.98861 10.3093C7.93344 11.7881 8.49349 13.193 9.56569 14.2652C9.91893 14.6184 10.3124 14.9196 10.7352 15.1604C10.8694 15.2369 11.0155 15.2732 11.1597 15.2732C11.4585 15.2732 11.7488 15.1171 11.9072 14.839Z" fill="#3D8AFF"></path>
+												</g>
+												<defs>
+													<clipPath id="clip0_2_311">
+														<rect width="22" height="22" fill="white" transform="translate(0.852051 0.97876)"></rect>
+													</clipPath>
+												</defs>
+											</svg></a></div>
+								</div>
 							</div>
-						</div>
-					</div>
-					<div class="short-table-item">
-						<div class="short-table-block">
-							<div class="short-table-title">Turnover,BNB</div>
-							<div class="short-table-info short-table-numbers">
-								<div class="about-count">401 414.66</div>
-								<div class="about-count-growth">+ 28 648.04</div>
+							<div class="short-table-item">
+								<div class="short-table-block">
+									<div class="short-table-title">Members total</div>
+									<div class="short-table-info short-table-numbers">
+										<div class="about-count">71 009</div>
+										<div class="about-count-growth">+ 7 510</div>
+									</div>
+								</div>
+							</div>
+							<div class="short-table-item">
+								<div class="short-table-block">
+									<div class="short-table-title">Transactions made</div>
+									<div class="short-table-info short-table-numbers">
+										<div class="about-count">380 578</div>
+										<div class="about-count-growth">+ 2 573</div>
+									</div>
+								</div>
+							</div>
+							<div class="short-table-item">
+								<div class="short-table-block">
+									<div class="short-table-title">Turnover,BNB</div>
+									<div class="short-table-info short-table-numbers">
+										<div class="about-count">401 414.66</div>
+										<div class="about-count-growth">+ 28 648.04</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -340,6 +499,104 @@
 								<div class="activity-wrapper"><a class="activity-id" href="./account.html">ID 362963</a>
 									<div class="activity-info">+0.592 BNB <span>on </span>Level 9 <span>in </span><a href="./express-game.html">Express</a></div>
 									<div class="activity-time"><a class="activity-time-icon" href="#!"></a><span>~ 1 hour</span></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="activity">
+				<div class="title-block title-block-row">
+					<h2 class="title-2">Recent activity</h2>
+					<div class="tooltip-box"><img src="./img/icons/tooltip.svg" alt="hint"/>
+						<div class="tooltip">Real-time events with links to blockchain transactions</div>
+					</div>
+				</div>
+				<div class="divTable">
+					<div class="divTableWrapper custom-scroll">
+						<div class="divTableBody">
+							<div class="divTableRow">
+								<div class="activity-icon preloader-bar"><img src="./img/icons/download_pink.svg" alt="withdrawal"/></div>
+								<div class="activity-wrapper"><a class="activity-id preloader-bar" href="./account.html">ID 362965</a>
+									<div class="activity-info preloader-bar"><span>activated </span>Level 9 <span>in </span><a href="./express-game.html">Express</a></div>
+									<div class="activity-time preloader-bar"><a class="activity-time-icon" href="#!"></a><span>~ 1 hour</span></div>
+								</div>
+							</div>
+							<div class="divTableRow">
+								<div class="activity-icon preloader-bar"><a href="#!"><img src="./img/icons/wallet-pink.svg" alt="wallet"/></a></div>
+								<div class="activity-wrapper"><a class="activity-id preloader-bar" href="./account.html">ID 362963</a>
+									<div class="activity-info preloader-bar">+0.592 BNB <span>on </span>Level 9 <span>in </span><a href="./express-game.html">Express</a></div>
+									<div class="activity-time preloader-bar"><a class="activity-time-icon" href="#!"></a><span>~ 1 hour</span></div>
+								</div>
+							</div>
+							<div class="divTableRow">
+								<div class="activity-icon preloader-bar"><img src="./img/icons/account-pink.svg" alt="account"/></div>
+								<div class="activity-wrapper"><a class="activity-id preloader-bar" href="./account.html">ID 362963</a>
+									<div class="activity-info preloader-bar"><span>+ partner bonus </span>0.04 BNB <span>on </span>Level 9 <span>in </span><a href="./express-game.html">Express</a></div>
+									<div class="activity-time preloader-bar"><a class="activity-time-icon" href="#!"></a><span>~ 1 hour</span></div>
+								</div>
+							</div>
+							<div class="divTableRow">
+								<div class="activity-icon preloader-bar"><img src="./img/icons/account-pink.svg" alt="account"/></div>
+								<div class="activity-wrapper"><a class="activity-id preloader-bar" href="./account.html">ID 362963</a>
+									<div class="activity-info preloader-bar"><span>+ partner bonus </span>0.0064 BNB <span>on </span>Level 9 <span>in </span><a href="./express-game.html">Express</a></div>
+									<div class="activity-time preloader-bar"><a class="activity-time-icon" href="#!"></a><span>~ 1 hour</span></div>
+								</div>
+							</div>
+							<div class="divTableRow">
+								<div class="activity-icon preloader-bar"><img src="./img/icons/account-pink.svg" alt="account"/></div>
+								<div class="activity-wrapper"><a class="activity-id preloader-bar" href="./account.html">ID 362963</a>
+									<div class="activity-info preloader-bar"><span>+ partner bonus </span>0.104 BNB <span>on </span>Level 9 <span>in </span><a href="./express-game.html">Express</a></div>
+									<div class="activity-time preloader-bar"><a class="activity-time-icon" href="#!"></a><span>~ 1 hour</span></div>
+								</div>
+							</div>
+							<div class="divTableRow">
+								<div class="activity-icon preloader-bar"><img src="./img/icons/download_pink.svg" alt="withdrawal"/></div>
+								<div class="activity-wrapper"><a class="activity-id preloader-bar" href="./account.html">ID 362965</a>
+									<div class="activity-info preloader-bar"><span>activated </span>Level 12<span>in </span><a href="./express-game.html">Express</a></div>
+									<div class="activity-time preloader-bar"><a class="activity-time-icon" href="#!"></a><span>~ 1 hour</span></div>
+								</div>
+							</div>
+							<div class="divTableRow">
+								<div class="activity-icon preloader-bar"><img src="./img/icons/wallet-pink.svg" alt="wallet"/></div>
+								<div class="activity-wrapper"><a class="activity-id preloader-bar" href="./account.html">ID 362963</a>
+									<div class="activity-info preloader-bar">+1.628 BNB <span>on </span>Level 12 <span>in </span><a href="">Express</a></div>
+									<div class="activity-time preloader-bar"><a class="activity-time-icon" href="#!"></a><span>~ 1 hour</span></div>
+								</div>
+							</div>
+							<div class="divTableRow">
+								<div class="activity-icon preloader-bar"><img src="./img/icons/account-pink.svg" alt="account"/></div>
+								<div class="activity-wrapper"><a class="activity-id preloader-bar" href="./account.html">ID 362963</a>
+									<div class="activity-info preloader-bar"><span>+ partner bonus </span>0.11 BNB <span>on </span>Level 9 <span>in </span><a href="./express-game.html">Express</a></div>
+									<div class="activity-time preloader-bar"><a class="activity-time-icon" href="#!"></a><span>~ 1 hour</span></div>
+								</div>
+							</div>
+							<div class="divTableRow">
+								<div class="activity-icon preloader-bar"><img src="./img/icons/wallet-pink.svg" alt="wallet"/></div>
+								<div class="activity-wrapper"><a class="activity-id preloader-bar" href="./account.html">ID 362963</a>
+									<div class="activity-info preloader-bar">+1.628 BNB <span>on </span>Level 12 <span>in </span><a href="./express-game.html">Express</a></div>
+									<div class="activity-time preloader-bar"><a class="activity-time-icon" href="#!"></a><span>~ 1 hour</span></div>
+								</div>
+							</div>
+							<div class="divTableRow">
+								<div class="activity-icon preloader-bar"><img src="./img/icons/account-pink.svg" alt="account"/></div>
+								<div class="activity-wrapper"><a class="activity-id preloader-bar" href="./account.html">ID 362963</a>
+									<div class="activity-info preloader-bar"><span>+ partner bonus </span>0.11 BNB <span>on </span>Level 9 <span>in </span><a href="./express-game.html">Express</a></div>
+									<div class="activity-time preloader-bar"><a class="activity-time-icon" href="#!"></a><span>~ 1 hour</span></div>
+								</div>
+							</div>
+							<div class="divTableRow">
+								<div class="activity-icon preloader-bar"><img src="./img/icons/download_pink.svg" alt="withdrawal"/></div>
+								<div class="activity-wrapper"><a class="activity-id preloader-bar" href="./account.html">ID 362965</a>
+									<div class="activity-info preloader-bar"><span>activated </span>Level 9 <span>in </span><a href="./express-game.html">Express</a></div>
+									<div class="activity-time preloader-bar"><a class="activity-time-icon" href="#!"></a><span>~ 1 hour</span></div>
+								</div>
+							</div>
+							<div class="divTableRow">
+								<div class="activity-icon preloader-bar"><img src="./img/icons/wallet-pink.svg" alt="wallet"/></div>
+								<div class="activity-wrapper"><a class="activity-id preloader-bar" href="./account.html">ID 362963</a>
+									<div class="activity-info preloader-bar">+0.592 BNB <span>on </span>Level 9 <span>in </span><a href="./express-game.html">Express</a></div>
+									<div class="activity-time preloader-bar"><a class="activity-time-icon" href="#!"></a><span>~ 1 hour</span></div>
 								</div>
 							</div>
 						</div>
